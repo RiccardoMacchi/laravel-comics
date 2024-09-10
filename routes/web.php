@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $title = 'Layout base - HOME';
-    $text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo modi, iusto dolore eaque laudantium optio, adipisci perspiciatis voluptate obcaecati sit perferendis natus velit ut! Tempora voluptatum ipsam modi rem voluptas.';
-    return view('home', compact('text', 'title'));
+    // Acesso ai data presenti nel file data nella cartella config
+    $dataComics = config('data');
+    return view('home', compact('dataComics'));
 })->name('home');
 
 Route::get('/chi-siamo', function () {

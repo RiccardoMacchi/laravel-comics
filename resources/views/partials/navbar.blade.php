@@ -1,15 +1,17 @@
+@php
+    $headermenu = config('datamenu.headermenu');
+@endphp
+
 <header>
     <div class="container">
         <a href="#">
-            <img src="{{ vite::asset('resources/img/dc-logo.png') }}" alt="Logo DC">
+            <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo DC">
         </a>
         <nav>
             <ul>
-                <li><a href="">Prova</a></li>
-                <li><a href="">Prova</a></li>
-                <li><a href="">Prova</a></li>
-                <li><a href="">Prova</a></li>
-                <li><a href="">Prova</a></li>
+                @foreach ($headermenu as $link)
+                    <li><a href="{{ route($link) }}">{{ $link }}</a></li>
+                @endforeach
             </ul>
         </nav>
     </div>

@@ -4,13 +4,14 @@
 
 <header>
     <div class="container">
-        <a href="#">
+        <a href="{{ route('home') }}">
             <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="Logo DC">
         </a>
         <nav>
             <ul>
                 @foreach ($headermenu as $link)
-                    <li><a href="{{ route($link) }}">{{ $link }}</a></li>
+                    <li><a class="{{ Route::currentRouteName() == $link['name'] ? 'active' : '' }}"
+                            href="{{ route($link['name']) }}">{{ $link['title'] }}</a></li>
                 @endforeach
             </ul>
         </nav>

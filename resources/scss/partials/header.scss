@@ -9,7 +9,8 @@ header {
             color: black;
             font-weight: 600;
 
-            &:hover {
+            &:hover,
+            &.active {
                 color: $primary;
             }
         }

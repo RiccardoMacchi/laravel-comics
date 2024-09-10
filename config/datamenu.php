@@ -1,7 +1,49 @@
 <?php
 
 return [
-    'headermenu' => ["characters", "comics", "movies", "tv", "games", "collectibles", "videos", "fans", "news", "shop"],
+    'headermenu' => [
+        [
+            'name' => 'characters',
+            'title' => 'CHARACTERS'
+        ],
+        [
+            'name' => 'comics',
+            'title' => 'COMICS'
+        ],
+        [
+            'name' => 'movies',
+            'title' => 'MOVIES'
+        ],
+        [
+            'name' => 'tv',
+            'title' => 'TV'
+        ],
+        [
+            'name' => 'games',
+            'title' => 'GAMES'
+        ],
+        [
+            'name' => 'collectibles',
+            'title' => 'COLLECTIBLES'
+        ],
+        [
+            'name' => 'videos',
+            'title' => 'VIDEOS'
+        ],
+        [
+            'name' => 'fans',
+            'title' => 'FANS'
+        ],
+        [
+            'name' => 'news',
+            'title' => 'NEWS'
+        ],
+        [
+            'name' => 'shop',
+            'title' => 'SHOP'
+        ]
+    ],
+
 
     'footerdccomics' => ["Characters", "Comics", "Movies", "TV", "Games", "Videos", "News"],
 

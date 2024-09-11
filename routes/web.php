@@ -40,7 +40,8 @@ Route::get('/games', function () {
 })->name('games');
 
 Route::get('/collectibles', function () {
-    return view('collectibles');
+    $dataComics = config('data');
+    return view('collectibles', compact('dataComics'));
 })->name('collectibles');
 
 Route::get('/videos', function () {
